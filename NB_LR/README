@@ -1,0 +1,9 @@
+1. Change current directory to src using command 'cd src'
+2. Compile java files using command 'javac edu/utdallas/*.java'
+3. Run java using format 'java eta lambda iteration TrainHamDir TrainSpamDir TestHamDir TestSpamDir [filterFile]'
+for example:
+java edu.utdallas.Main 0.01 1 30 ../train/ham/ ../train/spam/ ../test/ham/ ../test/spam/ ../stopword.txt
+
+When there is no stopword.txt, it just do not using filter.
+For example:
+java edu.utdallas.Main 0.01 1 30 ../train/ham/ ../train/spam/ ../test/ham/ ../test/spam/
